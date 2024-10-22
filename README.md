@@ -10,3 +10,12 @@ def show_menu():
     print("Option: Seven")
     print("Option: Eight")
     print("Option: Nine")
+
+
+choice = int(input("Enter your choice (1-9):"))
+        if 1 <= choice <= 9:
+            print("You're option {choice}.")
+        else:
+            print("choice 1 to 9.")
+    except ValueError:
+        print("Invalid input number.")
